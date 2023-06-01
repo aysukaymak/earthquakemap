@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Earthquakes</title>
+
+    <!-- Leaflet CSS File -->
+    <link rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    
+    <!-- Leaflet Sidebar CSS File -->
+    <link rel="stylesheet" href="../css/leaflet-sidebar.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    
+    <!-- CSS File -->
+    <link rel="stylesheet" href="..\css\style.css"/>
+
+
+</head>
+
+<body>
+    <div id="sidebar" class="sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="sidebar-tabs">
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="sidebar-content">
+            <div class="sidebar-pane" id="home">
+                <h3 class="sidebar-header">
+                    EARTHQUAKE MAP
+                    <span class="sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h3>
+                <div id="latest">
+                    <h4><a href="https://www.usgs.gov/programs/earthquake-hazards/science/earthquake-early-warning-around-world" target="_blank" style="text-decoration: none;">Earthquake Early Warning Around the World</a></h4>
+                    <h4><a href="https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes" target="_blank" style="text-decoration: none;">The Science of Eartquakes</a></h4>
+                    <h4><a href="https://www.insarag.org/" target="_blank" style="text-decoration: none;">International Search And Rescue Advisory Group</a></h4>
+                    <h4>Latest Earthquakes</h4>    
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <div id="map" class="sidebar-map"></div>
+
+    <!-- Jquery File -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Leaflet JS File -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <script src="../js/leaflet-sidebar.js"></script>
+
+    <!-- API_KEY File -->
+    <script src="..\js\api.js"></script>
+    
+    <!--JS File -->
+    <script src="..\js\maps.js"></script>  
+</body>

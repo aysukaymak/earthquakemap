@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#map,body,html{
+  height: 100%;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.legend {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  box-shadow: 0.1px 0.1px 1px 1px  rgba(0, 0, 0, 0.3) ;
+  border-radius:4px;
+  line-height: 18px;
+  color: rgba(128, 128, 128);
+}
+.legend i{
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 1;
+}
